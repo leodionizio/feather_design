@@ -21,7 +21,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: darken(map-get($colors, secondary), 6);
     }
 }
@@ -41,7 +41,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: darken(map-get($colors, primary), 6);
     }
     &:disabled {
@@ -61,7 +61,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: darken(map-get($colors, secondary), 6);
     }
     &:disabled {
@@ -81,7 +81,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: darken(map-get($colors, success), 6);
     }
     &:disabled {
@@ -101,7 +101,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: darken(map-get($colors, danger), 6);
     }
     &:disabled {
@@ -121,7 +121,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: darken(map-get($colors, warning), 6);
     }
     &:disabled {
@@ -141,7 +141,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: darken(map-get($colors, info), 6);
     }
     &:disabled {
@@ -161,7 +161,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: darken(map-get($colors, dark), 6);
     }
     &:disabled {
@@ -181,7 +181,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: darken(map-get($colors, light), 6);
     }
     &:disabled {
@@ -205,7 +205,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         color: map-get($colors, light);
         background-color: map-get($colors, primary);
     }
@@ -226,7 +226,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: map-get($colors, secondary);
     }
     &:disabled {
@@ -246,7 +246,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         color: map-get($colors, light);
         background-color: map-get($colors, success);
     }
@@ -267,7 +267,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         color: map-get($colors, light);
         background-color: map-get($colors, danger);
     }
@@ -288,7 +288,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         color: map-get($colors, light);
         background-color: map-get($colors, warning);
     }
@@ -309,7 +309,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         color: map-get($colors, light);
         background-color: map-get($colors, info);
     }
@@ -330,7 +330,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         color: map-get($colors, light);
         background-color: map-get($colors, dark);
     }
@@ -351,7 +351,7 @@
     &.btn-sm {
         font-size: $font-size-button-sm;
     }
-    &:hover {
+    &:hover:not(:disabled) {
         color: map-get($colors, dark);
         background-color: map-get($colors, light);
     }

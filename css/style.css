@@ -19,7 +19,7 @@
     font-size: 1.2rem; }
   .btn.btn-sm {
     font-size: 0.8rem; }
-  .btn:hover {
+  .btn:hover:not(:disabled) {
     background-color: #d7d7d7; }
 
 /* BTN COLOR
@@ -32,7 +32,7 @@
     font-size: 1.2rem; }
   .btn-color-primary.btn-sm {
     font-size: 0.8rem; }
-  .btn-color-primary:hover {
+  .btn-color-primary:hover:not(:disabled) {
     background-color: #00527a; }
   .btn-color-primary:disabled {
     opacity: .7;
@@ -46,7 +46,7 @@
     font-size: 1.2rem; }
   .btn-color-secondary.btn-sm {
     font-size: 0.8rem; }
-  .btn-color-secondary:hover {
+  .btn-color-secondary:hover:not(:disabled) {
     background-color: #d7d7d7; }
   .btn-color-secondary:disabled {
     opacity: .7;
@@ -60,7 +60,7 @@
     font-size: 1.2rem; }
   .btn-color-success.btn-sm {
     font-size: 0.8rem; }
-  .btn-color-success:hover {
+  .btn-color-success:hover:not(:disabled) {
     background-color: #1d7730; }
   .btn-color-success:disabled {
     opacity: .7;
@@ -74,7 +74,7 @@
     font-size: 1.2rem; }
   .btn-color-danger.btn-sm {
     font-size: 0.8rem; }
-  .btn-color-danger:hover {
+  .btn-color-danger:hover:not(:disabled) {
     background-color: #a91d2b; }
   .btn-color-danger:disabled {
     opacity: .7;
@@ -88,7 +88,7 @@
     font-size: 1.2rem; }
   .btn-color-warning.btn-sm {
     font-size: 0.8rem; }
-  .btn-color-warning:hover {
+  .btn-color-warning:hover:not(:disabled) {
     background-color: #c79500; }
   .btn-color-warning:disabled {
     opacity: .7;
@@ -102,7 +102,7 @@
     font-size: 1.2rem; }
   .btn-color-info.btn-sm {
     font-size: 0.8rem; }
-  .btn-color-info:hover {
+  .btn-color-info:hover:not(:disabled) {
     background-color: #1bc5df; }
   .btn-color-info:disabled {
     opacity: .7;
@@ -116,7 +116,7 @@
     font-size: 1.2rem; }
   .btn-color-dark.btn-sm {
     font-size: 0.8rem; }
-  .btn-color-dark:hover {
+  .btn-color-dark:hover:not(:disabled) {
     background-color: #2b3135; }
   .btn-color-dark:disabled {
     opacity: .7;
@@ -130,7 +130,7 @@
     font-size: 1.2rem; }
   .btn-color-light.btn-sm {
     font-size: 0.8rem; }
-  .btn-color-light:hover {
+  .btn-color-light:hover:not(:disabled) {
     background-color: #e0e2e7; }
   .btn-color-light:disabled {
     opacity: .7;
@@ -146,7 +146,7 @@
     font-size: 1.2rem; }
   .btn-outline-primary.btn-sm {
     font-size: 0.8rem; }
-  .btn-outline-primary:hover {
+  .btn-outline-primary:hover:not(:disabled) {
     color: #f1f2f4;
     background-color: #006699; }
   .btn-outline-primary:disabled {
@@ -161,7 +161,7 @@
     font-size: 1.2rem; }
   .btn-outline-secondary.btn-sm {
     font-size: 0.8rem; }
-  .btn-outline-secondary:hover {
+  .btn-outline-secondary:hover:not(:disabled) {
     background-color: #e6e6e6; }
   .btn-outline-secondary:disabled {
     opacity: .7;
@@ -175,7 +175,7 @@
     font-size: 1.2rem; }
   .btn-outline-success.btn-sm {
     font-size: 0.8rem; }
-  .btn-outline-success:hover {
+  .btn-outline-success:hover:not(:disabled) {
     color: #f1f2f4;
     background-color: #23903a; }
   .btn-outline-success:disabled {
@@ -190,7 +190,7 @@
     font-size: 1.2rem; }
   .btn-outline-danger.btn-sm {
     font-size: 0.8rem; }
-  .btn-outline-danger:hover {
+  .btn-outline-danger:hover:not(:disabled) {
     color: #f1f2f4;
     background-color: #c32232; }
   .btn-outline-danger:disabled {
@@ -205,7 +205,7 @@
     font-size: 1.2rem; }
   .btn-outline-warning.btn-sm {
     font-size: 0.8rem; }
-  .btn-outline-warning:hover {
+  .btn-outline-warning:hover:not(:disabled) {
     color: #f1f2f4;
     background-color: #e6ac00; }
   .btn-outline-warning:disabled {
@@ -220,7 +220,7 @@
     font-size: 1.2rem; }
   .btn-outline-info.btn-sm {
     font-size: 0.8rem; }
-  .btn-outline-info:hover {
+  .btn-outline-info:hover:not(:disabled) {
     color: #f1f2f4;
     background-color: #33cee6; }
   .btn-outline-info:disabled {
@@ -235,7 +235,7 @@
     font-size: 1.2rem; }
   .btn-outline-dark.btn-sm {
     font-size: 0.8rem; }
-  .btn-outline-dark:hover {
+  .btn-outline-dark:hover:not(:disabled) {
     color: #f1f2f4;
     background-color: #394046; }
   .btn-outline-dark:disabled {
@@ -250,9 +250,16 @@
     font-size: 1.2rem; }
   .btn-outline-light.btn-sm {
     font-size: 0.8rem; }
-  .btn-outline-light:hover {
+  .btn-outline-light:hover:not(:disabled) {
     color: #394046;
     background-color: #f1f2f4; }
   .btn-outline-light:disabled {
     opacity: .7;
     cursor: default; }
+
+nav.navbar {
+  background: #e6e6e6; }
+  nav.navbar.nav-bg-primary {
+    padding: .375rem .450rem;
+    color: #f1f2f4;
+    background-color: #006699; }
