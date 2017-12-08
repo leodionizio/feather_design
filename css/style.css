@@ -1,0 +1,258 @@
+.btn {
+  border: 1px solid transparent;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 1.5;
+  border: none;
+  background-color: #e6e6e6;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem; }
+  .btn.btn-lg {
+    font-size: 1.2rem; }
+  .btn.btn-sm {
+    font-size: 0.8rem; }
+  .btn:hover {
+    background-color: #d7d7d7; }
+
+/* BTN COLOR
+    COR FIXA */
+.btn-color-primary {
+  background-color: #006699;
+  color: #f1f2f4;
+  border: 1px solid #005f8f; }
+  .btn-color-primary.btn-lg {
+    font-size: 1.2rem; }
+  .btn-color-primary.btn-sm {
+    font-size: 0.8rem; }
+  .btn-color-primary:hover {
+    background-color: #00527a; }
+  .btn-color-primary:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-color-secondary {
+  background-color: #e6e6e6;
+  color: #394046;
+  border: 1px solid #e1e1e1; }
+  .btn-color-secondary.btn-lg {
+    font-size: 1.2rem; }
+  .btn-color-secondary.btn-sm {
+    font-size: 0.8rem; }
+  .btn-color-secondary:hover {
+    background-color: #d7d7d7; }
+  .btn-color-secondary:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-color-success {
+  background-color: #23903a;
+  color: #f1f2f4;
+  border: 1px solid #218837; }
+  .btn-color-success.btn-lg {
+    font-size: 1.2rem; }
+  .btn-color-success.btn-sm {
+    font-size: 0.8rem; }
+  .btn-color-success:hover {
+    background-color: #1d7730; }
+  .btn-color-success:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-color-danger {
+  background-color: #c32232;
+  color: #f1f2f4;
+  border: 1px solid #ba2030; }
+  .btn-color-danger.btn-lg {
+    font-size: 1.2rem; }
+  .btn-color-danger.btn-sm {
+    font-size: 0.8rem; }
+  .btn-color-danger:hover {
+    background-color: #a91d2b; }
+  .btn-color-danger:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-color-warning {
+  background-color: #e6ac00;
+  color: #f1f2f4;
+  border: 1px solid #dca400; }
+  .btn-color-warning.btn-lg {
+    font-size: 1.2rem; }
+  .btn-color-warning.btn-sm {
+    font-size: 0.8rem; }
+  .btn-color-warning:hover {
+    background-color: #c79500; }
+  .btn-color-warning:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-color-info {
+  background-color: #33cee6;
+  color: #f1f2f4;
+  border: 1px solid #2acce5; }
+  .btn-color-info.btn-lg {
+    font-size: 1.2rem; }
+  .btn-color-info.btn-sm {
+    font-size: 0.8rem; }
+  .btn-color-info:hover {
+    background-color: #1bc5df; }
+  .btn-color-info:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-color-dark {
+  background-color: #394046;
+  color: #f1f2f4;
+  border: 1px solid #343b40; }
+  .btn-color-dark.btn-lg {
+    font-size: 1.2rem; }
+  .btn-color-dark.btn-sm {
+    font-size: 0.8rem; }
+  .btn-color-dark:hover {
+    background-color: #2b3135; }
+  .btn-color-dark:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-color-light {
+  background-color: #f1f2f4;
+  color: #394046;
+  border: 1px solid #ebedf0; }
+  .btn-color-light.btn-lg {
+    font-size: 1.2rem; }
+  .btn-color-light.btn-sm {
+    font-size: 0.8rem; }
+  .btn-color-light:hover {
+    background-color: #e0e2e7; }
+  .btn-color-light:disabled {
+    opacity: .7;
+    cursor: default; }
+
+/* BTN OUTLINE
+    COR NA BORDA */
+.btn-outline-primary {
+  background-color: transparent;
+  color: #006699;
+  border: 1px solid #006699; }
+  .btn-outline-primary.btn-lg {
+    font-size: 1.2rem; }
+  .btn-outline-primary.btn-sm {
+    font-size: 0.8rem; }
+  .btn-outline-primary:hover {
+    color: #f1f2f4;
+    background-color: #006699; }
+  .btn-outline-primary:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #394046;
+  border: 1px solid #e6e6e6; }
+  .btn-outline-secondary.btn-lg {
+    font-size: 1.2rem; }
+  .btn-outline-secondary.btn-sm {
+    font-size: 0.8rem; }
+  .btn-outline-secondary:hover {
+    background-color: #e6e6e6; }
+  .btn-outline-secondary:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-outline-success {
+  background-color: transparent;
+  color: #23903a;
+  border: 1px solid #23903a; }
+  .btn-outline-success.btn-lg {
+    font-size: 1.2rem; }
+  .btn-outline-success.btn-sm {
+    font-size: 0.8rem; }
+  .btn-outline-success:hover {
+    color: #f1f2f4;
+    background-color: #23903a; }
+  .btn-outline-success:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: #c32232;
+  border: 1px solid #c32232; }
+  .btn-outline-danger.btn-lg {
+    font-size: 1.2rem; }
+  .btn-outline-danger.btn-sm {
+    font-size: 0.8rem; }
+  .btn-outline-danger:hover {
+    color: #f1f2f4;
+    background-color: #c32232; }
+  .btn-outline-danger:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-outline-warning {
+  background-color: transparent;
+  color: #e6ac00;
+  border: 1px solid #e6ac00; }
+  .btn-outline-warning.btn-lg {
+    font-size: 1.2rem; }
+  .btn-outline-warning.btn-sm {
+    font-size: 0.8rem; }
+  .btn-outline-warning:hover {
+    color: #f1f2f4;
+    background-color: #e6ac00; }
+  .btn-outline-warning:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-outline-info {
+  background-color: transparent;
+  color: #33cee6;
+  border: 1px solid #33cee6; }
+  .btn-outline-info.btn-lg {
+    font-size: 1.2rem; }
+  .btn-outline-info.btn-sm {
+    font-size: 0.8rem; }
+  .btn-outline-info:hover {
+    color: #f1f2f4;
+    background-color: #33cee6; }
+  .btn-outline-info:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: #394046;
+  border: 1px solid #394046; }
+  .btn-outline-dark.btn-lg {
+    font-size: 1.2rem; }
+  .btn-outline-dark.btn-sm {
+    font-size: 0.8rem; }
+  .btn-outline-dark:hover {
+    color: #f1f2f4;
+    background-color: #394046; }
+  .btn-outline-dark:disabled {
+    opacity: .7;
+    cursor: default; }
+
+.btn-outline-light {
+  background-color: transparent;
+  color: #394046;
+  border: 1px solid #f1f2f4; }
+  .btn-outline-light.btn-lg {
+    font-size: 1.2rem; }
+  .btn-outline-light.btn-sm {
+    font-size: 0.8rem; }
+  .btn-outline-light:hover {
+    color: #394046;
+    background-color: #f1f2f4; }
+  .btn-outline-light:disabled {
+    opacity: .7;
+    cursor: default; }

@@ -1,0 +1,362 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+.btn {
+    border: 1px solid transparent;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: $line-height-button;
+    border: none;
+    background-color: map-get($colors, secondary);
+    cursor: pointer;
+    font-size: $font-size-button;
+    padding: $padding-button;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    @include border-radius(.25rem);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: darken(map-get($colors, secondary), 6);
+    }
+}
+
+
+/* BTN COLOR
+    COR FIXA */
+
+// PRIMARY
+.btn-color-primary {
+    background-color: map-get($colors, primary);
+    color: map-get($colors, light);
+    border: 1px solid darken(map-get($colors, primary), 2);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: darken(map-get($colors, primary), 6);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// SECONDARY
+.btn-color-secondary {
+    background-color: map-get($colors, secondary);
+    color: map-get($colors, dark);
+    border: 1px solid darken(map-get($colors, secondary), 2);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: darken(map-get($colors, secondary), 6);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// SUCCESS
+.btn-color-success {
+    background-color: map-get($colors, success);
+    color: map-get($colors, light);
+    border: 1px solid darken(map-get($colors, success), 2);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: darken(map-get($colors, success), 6);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// DANGER
+.btn-color-danger {
+    background-color: map-get($colors, danger);
+    color: map-get($colors, light);
+    border: 1px solid darken(map-get($colors, danger), 2);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: darken(map-get($colors, danger), 6);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// WARNING
+.btn-color-warning {
+    background-color: map-get($colors, warning);
+    color: map-get($colors, light);
+    border: 1px solid darken(map-get($colors, warning), 2);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: darken(map-get($colors, warning), 6);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// INFO
+.btn-color-info {
+    background-color: map-get($colors, info);
+    color: map-get($colors, light);
+    border: 1px solid darken(map-get($colors, info), 2);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: darken(map-get($colors, info), 6);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// DARK
+.btn-color-dark {
+    background-color: map-get($colors, dark);
+    color: map-get($colors, light);
+    border: 1px solid darken(map-get($colors, dark), 2);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: darken(map-get($colors, dark), 6);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// LIGHT
+.btn-color-light {
+    background-color: map-get($colors, light);
+    color: map-get($colors, dark);
+    border: 1px solid darken(map-get($colors, light), 2);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: darken(map-get($colors, light), 6);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+
+/* BTN OUTLINE
+    COR NA BORDA */
+
+// PRIMARY
+.btn-outline-primary {
+    background-color: transparent;
+    color: map-get($colors, primary);
+    border: 1px solid map-get($colors, primary);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        color: map-get($colors, light);
+        background-color: map-get($colors, primary);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// SECONDARY
+.btn-outline-secondary {
+    background-color: transparent;
+    color: map-get($colors, dark);
+    border: 1px solid map-get($colors, secondary);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        background-color: map-get($colors, secondary);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// SUCCESS
+.btn-outline-success {
+    background-color: transparent;
+    color: map-get($colors, success);
+    border: 1px solid map-get($colors, success);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        color: map-get($colors, light);
+        background-color: map-get($colors, success);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// DANGER
+.btn-outline-danger {
+    background-color: transparent;
+    color: map-get($colors, danger);
+    border: 1px solid map-get($colors, danger);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        color: map-get($colors, light);
+        background-color: map-get($colors, danger);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// WARNING
+.btn-outline-warning {
+    background-color: transparent;
+    color: map-get($colors, warning);
+    border: 1px solid map-get($colors, warning);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        color: map-get($colors, light);
+        background-color: map-get($colors, warning);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// INFO
+.btn-outline-info {
+    background-color: transparent;
+    color: map-get($colors, info);
+    border: 1px solid map-get($colors, info);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        color: map-get($colors, light);
+        background-color: map-get($colors, info);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// DARK
+.btn-outline-dark {
+    background-color: transparent;
+    color: map-get($colors, dark);
+    border: 1px solid map-get($colors, dark);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        color: map-get($colors, light);
+        background-color: map-get($colors, dark);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
+
+// LIGHT
+.btn-outline-light {
+    background-color: transparent;
+    color: map-get($colors, dark);
+    border: 1px solid map-get($colors, light);
+    &.btn-lg {
+        font-size: $font-size-button-lg;
+    }
+    &.btn-sm {
+        font-size: $font-size-button-sm;
+    }
+    &:hover {
+        color: map-get($colors, dark);
+        background-color: map-get($colors, light);
+    }
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}
